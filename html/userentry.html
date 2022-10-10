@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="./js/userentry.js"></script>
+  </head>
+  <body>
+    <h1 class="w3-container">User Entry</h1>
+    <div class="w3-panel w3-sand w3-padding w3-card-4">
+      <form class="w3-container w3-padding">
+        <p>User Name: </p>
+        <input type="text" id="name" value="">
+        <p>User ID: </p>
+        <input type="text" id="uname" value="">
+        <p>Password: </p>
+        <input type="password" id="psw" value="">
+
+        <p>User Group: </p>
+        <select id="group" class="w3-padding" id="group">
+        </select>
+
+        <p class="w3-margin-top">
+          <button class="w3-button w3-light-green" type="button" onclick="createUser()">Create User</button>
+          <button class="w3-button w3-light-green" type="button" onclick="loadTable()">Load Table</button>
+        </p>
+      </form>
+
+
+    </div>
+    <div id="table-container" class="w3-panel w3-padding w3-card-4" hidden>
+      <table id="table" class="w3-table w3-striped w3-bordered" cellspacing="10">
+      </table>
+    </div>
+  </body>
+</html>
